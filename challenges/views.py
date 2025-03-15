@@ -22,6 +22,7 @@ monthly_challenges = {
 
 def index(request):
     list_item = ""
+    print(list_item)
     months = list(monthly_challenges.keys())
     return render(request, "challenges/index.html", {
         "months": months
